@@ -2,16 +2,36 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Reaction diffusion</title>
+  <title>glitch shader</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
+
+<style>
+
+.vertical-center {
+
+  position: relative;
+
+}
+</style>
+
+
 <!-- partial:index.partial.html -->
 
 <!-- partial -->
+<video id="video" autoplay loop webkit-playsinline crossorigin="anonymous" width="0">
+  <source src="https://i.imgur.com/5iR9iHf.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/91/three.min.js'></script><script  src="./glitch.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js'></script><script  src="./glitch.js"></script>
+  <br>
+  <body>
+
+      <div class="vertical-center">
+        <button id="play-button" position="relative" >Play</button>
+          <button id="stop-button">Stop</button>
+      </div>
 
 </body>
 </html>
